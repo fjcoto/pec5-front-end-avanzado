@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Pokemon } from '../../models/pokemon.interface';
+import { PokemonDetail } from '../../models/pokemon-detail.interface';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PokemonService } from '../../services/pokemon.service';
 
@@ -10,7 +10,7 @@ import { PokemonService } from '../../services/pokemon.service';
 })
 export class PokemonDetailComponent implements OnInit {
 
-  pokemon: Pokemon;
+  pokemon: PokemonDetail;
 
   constructor(private pokemonService: PokemonService,
     private activatedRoute: ActivatedRoute,

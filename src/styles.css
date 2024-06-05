@@ -2,3 +2,5 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.cursor-pointer { cursor: pointer; }
+.effect:hover { background-color: #ccc; transition: background-color 0.5s; }
