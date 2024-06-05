@@ -8,6 +8,7 @@ import { AppGridComponent } from './shared/app-grid/app-grid.component';
 import { AppCardComponent } from './shared/app-card/app-card.component';
 import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()

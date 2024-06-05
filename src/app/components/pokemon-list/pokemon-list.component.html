@@ -1,1 +1,8 @@
-<p>pokemon-list works!</p>
+<div class="container">
+    <h1>Pokemons</h1>
+    <ul class="list-group">
+        <a *ngFor= "let pokemon of pokemons" [routerLink]="['/pokemon', pokemon.name]" class="list-group-item list-group-item-action">
+            {{pokemon.name}} - {{pokemon.url}}
+        </a>
+    </ul>
+</div>

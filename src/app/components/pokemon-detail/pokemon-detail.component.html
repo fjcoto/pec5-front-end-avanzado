@@ -1,1 +1,15 @@
-<p>pokemon-detail works!</p>
+<div class="container mt-5">
+
+    <div *ngIf="pokemon" class="">
+        <div class="col-md-9">
+            <p><strong>Name:</strong> {{ pokemon.name }}</p>
+            <p><strong>URL:</strong> {{ pokemon.url }}</p>
+            <!--<img style="width: 80%; height: 80%;" src="{{ pokemon.sprite }}" alt="" class="rounded">-->
+        </div>
+
+        <div class="col-md-3">
+            <a class="btn btn-danger" routerLink="/">Back</a>
+        </div>
+    </div>
+
+</div>
