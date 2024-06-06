@@ -9,14 +9,29 @@ import { PokemonService } from '../../services/pokemon.service';
 })
 export class PokemonListComponent implements OnInit {
 
-pokemons: Pokemon[] = [];
+  pokemons: Pokemon[] = [];
+  viewSelected: 'card' | 'grid' = 'grid';
+  loading: boolean = true;
 
-constructor(private pokemonService: PokemonService) { }
+  constructor(private pokemonService: PokemonService) { }
 
   ngOnInit(): void {
+    this.loadPokemons();
+  }
+
+  loadPokemons(): void {
+    this.loading = true;
     this.pokemonService
       .getPokemons()
-      .subscribe((pokemons) => this.pokemons = pokemons);
+      .subscribe((pokemons) => {
+        this.pokemons = pokemons;
+        this.loading = false;
+      });
+  }
+
+  changeView(view: 'card' | 'grid') {
+    this.viewSelected = view;
+    this.loadPokemons();
   }
 
 }

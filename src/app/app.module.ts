@@ -13,6 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { MatCardModule } from '@angular/material/card';
     PokemonListComponent,
     GridComponent,
     CardComponent,
-    PokemonDetailComponent
+    PokemonDetailComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { MatCardModule } from '@angular/material/card';
     HttpClientModule,
     MatTableModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule,
+    MatProgressSpinnerModule
   ],
   providers: [
     provideAnimationsAsync()

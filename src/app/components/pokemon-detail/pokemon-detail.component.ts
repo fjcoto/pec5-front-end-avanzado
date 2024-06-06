@@ -21,15 +21,20 @@ export class PokemonDetailComponent implements OnInit {
     const identifier = this.activatedRoute.snapshot.paramMap.get('id');
     console.log('Identifier --> ', identifier);
 
-    this.pokemonService.getPokemonById(identifier).subscribe((pokemon) => {
+    this.pokemonService.getPokemonById(identifier).subscribe({
+      next: (pokemon) => {
 
-      if (!pokemon) {
-        return this.router.navigateByUrl('/');
+        if (!pokemon) {
+          return this.router.navigateByUrl('/');
+        }
+
+        this.pokemon = pokemon;
+        console.log('Pokemon --> ', this.pokemon);
+      },
+      error: (err) => {
+        console.error('Error: ', err);
+        this.router.navigateByUrl('/');
       }
-
-      this.pokemon = pokemon;
-      console.log('Pokemon --> ', this.pokemon);
     });
   }
-
 }

@@ -1,5 +1,22 @@
 <div class="container">
     <h1 class="text-center mt-3">Pokemons</h1>
 
-    <app-grid [pokemons]="pokemons"></app-grid>
+    <div class="text-end">
+        <button mat-icon-button (click)="changeView('card')">
+            <mat-icon>view_module</mat-icon>
+        </button>
+        <button mat-icon-button (click)="changeView('grid')">
+            <mat-icon>view_list</mat-icon>
+        </button>
+    </div>
+
+    <app-spinner [loading]="loading"></app-spinner>
+
+    <ng-container *ngIf="viewSelected === 'card'">
+        <app-card [pokemons]="pokemons"></app-card>
+    </ng-container>
+
+    <ng-container *ngIf="viewSelected === 'grid'">
+        <app-grid [pokemons]="pokemons"></app-grid>
+    </ng-container>
 </div>
