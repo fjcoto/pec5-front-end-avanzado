@@ -10,7 +10,7 @@ import { PokemonService } from '../../services/pokemon.service';
 export class PokemonListComponent implements OnInit {
 
   pokemons: Pokemon[] = [];
-  viewSelected: 'card' | 'grid' = 'grid';
+  viewSelected: 'card' | 'grid' = 'card';
   loading: boolean = true;
 
   constructor(private pokemonService: PokemonService) { }
