@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { UpperCasePipe } from './pipes/upper-case.pipe';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     GridComponent,
     CardComponent,
     PokemonDetailComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    UpperCasePipe
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,13 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatCardModule,
     MatIconModule,
     MatProgressSpinnerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [
     provideAnimationsAsync()

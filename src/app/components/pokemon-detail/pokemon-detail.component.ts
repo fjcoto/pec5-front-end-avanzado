@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { PokemonDetail } from '../../models/pokemon-detail.interface';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PokemonService } from '../../services/pokemon.service';
+import { MatAccordion } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-pokemon-detail',
@@ -12,6 +13,8 @@ export class PokemonDetailComponent implements OnInit {
 
   pokemon: PokemonDetail;
   showDetails: boolean = false;
+
+  @ViewChild(MatAccordion) accordion: MatAccordion;
 
   constructor(private pokemonService: PokemonService,
     private activatedRoute: ActivatedRoute,
