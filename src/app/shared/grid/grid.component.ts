@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 })
 export class GridComponent {
   @Input() pokemons: PokemonDetail[] = [];
-  displayedColumns: string[] = ['image', 'name'];
+  displayedColumns: string[] = ['id', 'name', 'image'];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   goDetails(id: number): void {
     this.router.navigate(['/pokemon', id]);

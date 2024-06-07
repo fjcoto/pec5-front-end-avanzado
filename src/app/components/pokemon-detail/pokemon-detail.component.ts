@@ -11,6 +11,7 @@ import { PokemonService } from '../../services/pokemon.service';
 export class PokemonDetailComponent implements OnInit {
 
   pokemon: PokemonDetail;
+  showDetails: boolean = false;
 
   constructor(private pokemonService: PokemonService,
     private activatedRoute: ActivatedRoute,
@@ -19,7 +20,6 @@ export class PokemonDetailComponent implements OnInit {
 
   ngOnInit(): void {
     const identifier = this.activatedRoute.snapshot.paramMap.get('id');
-    console.log('Identifier --> ', identifier);
 
     this.pokemonService.getPokemonById(identifier).subscribe({
       next: (pokemon) => {
@@ -36,5 +36,9 @@ export class PokemonDetailComponent implements OnInit {
         this.router.navigateByUrl('/');
       }
     });
+  }
+
+  toggleDetails(): void {
+    this.showDetails = !this.showDetails;
   }
 }

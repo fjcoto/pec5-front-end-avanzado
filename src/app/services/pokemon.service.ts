@@ -14,7 +14,7 @@ export class PokemonService {
   constructor(private http: HttpClient) { }
 
   getPokemons(): Observable<Pokemon[]> {
-    return this.http.get<{ results: Pokemon[] }>(this.endPoint + '/pokemon?limit=5')
+    return this.http.get<{ results: Pokemon[] }>(this.endPoint + '/pokemon?limit=10')
       .pipe(
         map(response => response.results),
         mergeMap((pokemons: Pokemon[]) => {

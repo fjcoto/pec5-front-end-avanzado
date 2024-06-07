@@ -1,14 +1,133 @@
 <div class="container mt-5">
 
-    <div *ngIf="pokemon" class="">
-        <div class="col-md-9">
-            <p><strong>Name:</strong> {{ pokemon.name }}</p>
-            <p><strong>URL:</strong> {{ pokemon.url }}</p>
-            <!--<img style="width: 80%; height: 80%;" src="{{ pokemon.sprite }}" alt="" class="rounded">-->
+    <div *ngIf="pokemon" class="container text-center">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+                <h1>{{ pokemon.name }}</h1>
+            </div>
+            <div class="col-3">
+                <a class="btn btn-danger" routerLink="/">Back</a>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+                <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" style="width:100px" class="">
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+                <button class="btn btn-primary" (click)="toggleDetails()">
+                    {{ showDetails ? 'Hide Details' : 'Show Details' }}
+                </button>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+        <div class="row my-5" *ngIf="showDetails">
+            <div class="col-12">
+                <mat-accordion>
 
-        <div class="col-md-3">
-            <a class="btn btn-danger" routerLink="/">Back</a>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Basic Information
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="row">
+                            <div class="fw-bold col-6">No.</div>
+                            <div class="col-6">{{ pokemon.id }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Base Experience</div>
+                            <div class="col-6">{{ pokemon.base_experience }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Height</div>
+                            <div class="col-6">{{ pokemon.height }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Weight</div>
+                            <div class="col-6">{{ pokemon.weight }}</div>
+                        </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel class="mt-3">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Base Stats
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="row">
+                            <div class="fw-bold col-6">HP</div>
+                            <div class="col-6">{{ pokemon.stats[0].base_stat }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Attack</div>
+                            <div class="col-6">{{ pokemon.stats[1].base_stat }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Defense</div>
+                            <div class="col-6">{{ pokemon.stats[2].base_stat }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Special Attack</div>
+                            <div class="col-6">{{ pokemon.stats[3].base_stat }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Special Defense</div>
+                            <div class="col-6">{{ pokemon.stats[4].base_stat }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Speed</div>
+                            <div class="col-6">{{ pokemon.stats[5].base_stat }}</div>
+                        </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel class="mt-3">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Abilities
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="row" *ngFor="let ability of pokemon.abilities; let i = index">
+                            <div class="fw-bold col-6">Ability {{ i }}</div>
+                            <div class="col-6">{{ ability.ability.name }}</div>
+                        </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel class="mt-3">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Sprites
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="row">
+                            <div class="fw-bold col-6">Front Default</div>
+                            <div class="col-6"><img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" style="width:100px" class=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Back Default</div>
+                            <div class="col-6"><img [src]="pokemon.sprites.back_default" alt="{{ pokemon.name }}" style="width:100px" class=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Front Shiny</div>
+                            <div class="col-6"><img [src]="pokemon.sprites.front_shiny" alt="{{ pokemon.name }}" style="width:100px" class=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold col-6">Back Shiny</div>
+                            <div class="col-6"><img [src]="pokemon.sprites.back_shiny" alt="{{ pokemon.name }}" style="width:100px" class=""></div>
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </div>
         </div>
     </div>
 
