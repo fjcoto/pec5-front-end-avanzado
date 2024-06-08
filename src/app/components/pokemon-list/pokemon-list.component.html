@@ -8,7 +8,7 @@
     </div>
 
     <div class="row my-3 justify-contentent-center align-items-center">
-        <div class="col-3">
+        <div class="col-4">
             <label for="recordtLimit" class="form-label">Number of records</label>
             <select name="recordtLimit" [(ngModel)]="recordtLimit" (change)="loadPokemons()" class="form-select"
                 id="recordLimit">
@@ -16,7 +16,7 @@
             </select>
         </div>
 
-        <div class="col-9 text-end">
+        <div class="col-8 text-end">
             <button mat-icon-button (click)="changeView('card')">
                 <mat-icon>view_module</mat-icon>
             </button>
