@@ -30,13 +30,13 @@ export class PokemonListComponent implements OnInit {
       .getAllPokemons()
       .subscribe({
         next: (pokemons) => {
-          if(pokemons.length === 0){
+          if (pokemons.length === 0) {
             this.error = true;
-          }else{
+          } else {
             this.allPokemons = pokemons;
             this.updatePokemonList();
           }
-         
+
           this.loading = false;
         },
         error: (err) => {
@@ -48,13 +48,18 @@ export class PokemonListComponent implements OnInit {
   }
 
   updatePokemonList(): void {
-    this.pokemons = this.allPokemons.slice(0, this.recordtLimit);
+    this.loading = true;
+    setTimeout(() => {
+      this.pokemons = this.allPokemons.slice(0, this.recordtLimit);
+      this.loading = false;
+    }, 200);  
   }
 
   changeView(view: 'card' | 'grid') {
     this.viewSelected = view;
+    this.updatePokemonList();
   }
-  
+
   onLimitChange(): void {
     this.updatePokemonList();
   }
