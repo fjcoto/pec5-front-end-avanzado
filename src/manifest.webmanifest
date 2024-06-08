@@ -106,12 +106,13 @@
   ],
   "screenshots": [
     {
-      "src": "assets/screenhots/desktop.png",
+      "src": "assets/screenshots/desktop.png",
       "sizes": "1823x1045",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     },
     {
-      "src": "assets/screenhots/mobile.png",
+      "src": "assets/screenshots/mobile.png",
       "sizes": "463x922",
       "type": "image/png"
     }
