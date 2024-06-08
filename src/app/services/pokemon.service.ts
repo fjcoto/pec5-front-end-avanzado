@@ -24,8 +24,7 @@ export class PokemonService {
                 id: this.getIdFromUrl(pokemon.url),
                 name: details.name,
                 url: pokemon.url,
-                sprites: details.sprites,
-                weight: details.weight
+                sprites: details.sprites
               }))
             )
           );
