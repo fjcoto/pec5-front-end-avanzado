@@ -19,6 +19,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { UpperCasePipe } from './pipes/upper-case.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     MatIconModule,
     MatProgressSpinnerModule,
     MatExpansionModule,
+    FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable

@@ -33,12 +33,12 @@
   "dataGroups": [
     {
       "name": "pokemon",
-      "urls":[
+      "urls": [
         "https://pokeapi.co/**"
       ],
       "cacheConfig": {
-        "maxSize": 10,
-        "maxAge": "1h",
+        "maxSize": 50,
+        "maxAge": "7d",
         "timeout": "1s",
         "strategy": "freshness"
       }

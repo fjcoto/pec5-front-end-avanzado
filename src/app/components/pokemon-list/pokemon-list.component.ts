@@ -12,6 +12,8 @@ export class PokemonListComponent implements OnInit {
   pokemons: Pokemon[] = [];
   viewSelected: 'card' | 'grid' = 'card';
   loading: boolean = true;
+  recordtLimit: number = 10;
+  limits: number[] = [10, 20, 50, 100, 150];
 
   constructor(private pokemonService: PokemonService) { }
 
@@ -22,7 +24,7 @@ export class PokemonListComponent implements OnInit {
   loadPokemons(): void {
     this.loading = true;
     this.pokemonService
-      .getPokemons()
+      .getPokemons(this.recordtLimit)
       .subscribe((pokemons) => {
         this.pokemons = pokemons;
         this.loading = false;

@@ -3,14 +3,30 @@
         <img src="../../../assets/images/pokemon-logo.png" alt="Pokemon" class="img-fluid w-50">
     </div>
 
-    <div class="text-end">
-        <button mat-icon-button (click)="changeView('card')">
-            <mat-icon>view_module</mat-icon>
-        </button>
-        <button mat-icon-button (click)="changeView('grid')">
-            <mat-icon>view_list</mat-icon>
-        </button>
+    <div class="row text-center my-3">
+        <span class="fst-italic">Developed by Fran Coto for educational purposes</span>
     </div>
+
+    <div class="row my-3 justify-contentent-center align-items-center">
+        <div class="col-3">
+            <label for="recordtLimit" class="form-label">Number of records</label>
+            <select name="recordtLimit" [(ngModel)]="recordtLimit" (change)="loadPokemons()" class="form-select"
+                id="recordLimit">
+                <option *ngFor="let limit of limits" [value]="limit">{{ limit }}</option>
+            </select>
+        </div>
+
+        <div class="col-9 text-end">
+            <button mat-icon-button (click)="changeView('card')">
+                <mat-icon>view_module</mat-icon>
+            </button>
+            <button mat-icon-button (click)="changeView('grid')">
+                <mat-icon>view_list</mat-icon>
+            </button>
+        </div>
+    </div>
+
+   
 
     <app-spinner [loading]="loading"></app-spinner>
 

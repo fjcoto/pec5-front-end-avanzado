@@ -13,8 +13,8 @@ export class PokemonService {
 
   constructor(private http: HttpClient) { }
 
-  getPokemons(): Observable<Pokemon[]> {
-    return this.http.get<{ results: Pokemon[] }>(this.endPoint + '/pokemon?limit=10')
+  getPokemons(limit: number): Observable<Pokemon[]> {
+    return this.http.get<{ results: Pokemon[] }>(this.endPoint + '/pokemon?limit=' + limit)
       .pipe(
         map(response => response.results),
         mergeMap((pokemons: Pokemon[]) => {
