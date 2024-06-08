@@ -1,0 +1,106 @@
+{
+  "configVersion": 1,
+  "timestamp": 1717853986654,
+  "index": "/angular-pwa-introduction/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/angular-pwa-introduction/chunk-42NTJASF.js",
+        "/angular-pwa-introduction/chunk-TGDIM3B6.js",
+        "/angular-pwa-introduction/favicon.ico",
+        "/angular-pwa-introduction/index.html",
+        "/angular-pwa-introduction/main-MVTAAHAZ.js",
+        "/angular-pwa-introduction/manifest.webmanifest",
+        "/angular-pwa-introduction/polyfills-A7MJM4D4.js",
+        "/angular-pwa-introduction/styles-YHGPLETP.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/angular-pwa-introduction/assets/icons/icon-128x128.png",
+        "/angular-pwa-introduction/assets/icons/icon-144x144.png",
+        "/angular-pwa-introduction/assets/icons/icon-152x152.png",
+        "/angular-pwa-introduction/assets/icons/icon-192x192.png",
+        "/angular-pwa-introduction/assets/icons/icon-384x384.png",
+        "/angular-pwa-introduction/assets/icons/icon-512x512.png",
+        "/angular-pwa-introduction/assets/icons/icon-72x72.png",
+        "/angular-pwa-introduction/assets/icons/icon-96x96.png",
+        "/angular-pwa-introduction/assets/images/pokemon-logo.png",
+        "/angular-pwa-introduction/assets/screenshots/desktop.png",
+        "/angular-pwa-introduction/assets/screenshots/mobile.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "pokemon",
+      "patterns": [
+        "https:\\/\\/pokeapi\\.co\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 50,
+      "maxAge": 604800000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/angular-pwa-introduction/assets/icons/icon-128x128.png": "8b42cce4a2436a08c1edc85b37ea09158e803c3a",
+    "/angular-pwa-introduction/assets/icons/icon-144x144.png": "bcfa95c72fb2f61e00ee277d9b35d02497bbcca6",
+    "/angular-pwa-introduction/assets/icons/icon-152x152.png": "131b8b7f46856e3a09b0b68327f86472f4a646cb",
+    "/angular-pwa-introduction/assets/icons/icon-192x192.png": "4d896f7e11333a061c3f69cfbb1da651aa7a3d99",
+    "/angular-pwa-introduction/assets/icons/icon-384x384.png": "87ded333540496d34953269a180a62057779ac6d",
+    "/angular-pwa-introduction/assets/icons/icon-512x512.png": "4119f1800d984adf05008a02bfba163f3d280cb0",
+    "/angular-pwa-introduction/assets/icons/icon-72x72.png": "dfdf7d279ec6b6bedc32a80ce6da4eec6e6b9ef9",
+    "/angular-pwa-introduction/assets/icons/icon-96x96.png": "22771e1145894ff726fb55804c2b29789f77afb1",
+    "/angular-pwa-introduction/assets/images/pokemon-logo.png": "c22a2efd81a7bc029c8fe4bdfb00e594876d364e",
+    "/angular-pwa-introduction/assets/screenshots/desktop.png": "ffb09608472e6af48393190a17d609f3e71866b9",
+    "/angular-pwa-introduction/assets/screenshots/mobile.png": "51344688d145992b21094489637776080a12c8a8",
+    "/angular-pwa-introduction/chunk-42NTJASF.js": "e1705aa4184f0e697d6e1fbf1faf2295c50da967",
+    "/angular-pwa-introduction/chunk-TGDIM3B6.js": "dbb1da6c3f213e82f7bddc6bcd4bbf0e090dacc1",
+    "/angular-pwa-introduction/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/angular-pwa-introduction/index.html": "6514edd69d45551c8d05ebfadcf4c0d5a9149fbb",
+    "/angular-pwa-introduction/main-MVTAAHAZ.js": "d70e777434aafb5a91d82d0fbd64ee81ecd1cda2",
+    "/angular-pwa-introduction/manifest.webmanifest": "a6276785b854bda35a1007eae01e309596968014",
+    "/angular-pwa-introduction/polyfills-A7MJM4D4.js": "547053781d5952561abe68a51cc6c1a2b1b51c55",
+    "/angular-pwa-introduction/styles-YHGPLETP.css": "e50ba7c875f6a17c1cd2c4b026ab548897524ef5"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
