@@ -9,8 +9,8 @@
 
     <div class="row my-3 justify-contentent-center align-items-center">
         <div class="col-4 col-md-3">
-            <label for="recordtLimit" class="form-label">Records</label>
-            <select name="recordtLimit" [(ngModel)]="recordtLimit" (change)="onLimitChange()" class="form-select"
+            <label for="recordLimit" class="form-label">Records</label>
+            <select name="recordLimit" [(ngModel)]="recordtLimit" (change)="onLimitChange()" class="form-select"
                 id="recordLimit">
                 <option *ngFor="let limit of limits" [value]="limit">{{ limit }}</option>
             </select>
