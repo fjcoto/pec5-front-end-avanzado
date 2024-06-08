@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1717855140797,
-  "index": "/angular-pwa-introduction/index.html",
+  "timestamp": 1717858445951,
+  "index": "/pec5-front-end-avanzado/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/angular-pwa-introduction/chunk-42NTJASF.js",
-        "/angular-pwa-introduction/chunk-TGDIM3B6.js",
-        "/angular-pwa-introduction/favicon.ico",
-        "/angular-pwa-introduction/index.html",
-        "/angular-pwa-introduction/main-5U3RF2IR.js",
-        "/angular-pwa-introduction/manifest.webmanifest",
-        "/angular-pwa-introduction/polyfills-A7MJM4D4.js",
-        "/angular-pwa-introduction/styles-AUG2VGXY.css"
+        "/pec5-front-end-avanzado/chunk-42NTJASF.js",
+        "/pec5-front-end-avanzado/chunk-TGDIM3B6.js",
+        "/pec5-front-end-avanzado/favicon.ico",
+        "/pec5-front-end-avanzado/index.html",
+        "/pec5-front-end-avanzado/main-HA7EYJP6.js",
+        "/pec5-front-end-avanzado/manifest.webmanifest",
+        "/pec5-front-end-avanzado/polyfills-A7MJM4D4.js",
+        "/pec5-front-end-avanzado/styles-XKYIJGDF.css"
       ],
       "patterns": [
         "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css"
@@ -32,17 +32,17 @@
         "ignoreVary": true
       },
       "urls": [
-        "/angular-pwa-introduction/assets/icons/icon-128x128.png",
-        "/angular-pwa-introduction/assets/icons/icon-144x144.png",
-        "/angular-pwa-introduction/assets/icons/icon-152x152.png",
-        "/angular-pwa-introduction/assets/icons/icon-192x192.png",
-        "/angular-pwa-introduction/assets/icons/icon-384x384.png",
-        "/angular-pwa-introduction/assets/icons/icon-512x512.png",
-        "/angular-pwa-introduction/assets/icons/icon-72x72.png",
-        "/angular-pwa-introduction/assets/icons/icon-96x96.png",
-        "/angular-pwa-introduction/assets/images/pokemon-logo.png",
-        "/angular-pwa-introduction/assets/screenshots/desktop.png",
-        "/angular-pwa-introduction/assets/screenshots/mobile.png"
+        "/pec5-front-end-avanzado/assets/icons/icon-128x128.png",
+        "/pec5-front-end-avanzado/assets/icons/icon-144x144.png",
+        "/pec5-front-end-avanzado/assets/icons/icon-152x152.png",
+        "/pec5-front-end-avanzado/assets/icons/icon-192x192.png",
+        "/pec5-front-end-avanzado/assets/icons/icon-384x384.png",
+        "/pec5-front-end-avanzado/assets/icons/icon-512x512.png",
+        "/pec5-front-end-avanzado/assets/icons/icon-72x72.png",
+        "/pec5-front-end-avanzado/assets/icons/icon-96x96.png",
+        "/pec5-front-end-avanzado/assets/images/pokemon-logo.png",
+        "/pec5-front-end-avanzado/assets/screenshots/desktop.png",
+        "/pec5-front-end-avanzado/assets/screenshots/mobile.png"
       ],
       "patterns": []
     }
@@ -64,25 +64,25 @@
     }
   ],
   "hashTable": {
-    "/angular-pwa-introduction/assets/icons/icon-128x128.png": "8b42cce4a2436a08c1edc85b37ea09158e803c3a",
-    "/angular-pwa-introduction/assets/icons/icon-144x144.png": "bcfa95c72fb2f61e00ee277d9b35d02497bbcca6",
-    "/angular-pwa-introduction/assets/icons/icon-152x152.png": "131b8b7f46856e3a09b0b68327f86472f4a646cb",
-    "/angular-pwa-introduction/assets/icons/icon-192x192.png": "4d896f7e11333a061c3f69cfbb1da651aa7a3d99",
-    "/angular-pwa-introduction/assets/icons/icon-384x384.png": "87ded333540496d34953269a180a62057779ac6d",
-    "/angular-pwa-introduction/assets/icons/icon-512x512.png": "4119f1800d984adf05008a02bfba163f3d280cb0",
-    "/angular-pwa-introduction/assets/icons/icon-72x72.png": "dfdf7d279ec6b6bedc32a80ce6da4eec6e6b9ef9",
-    "/angular-pwa-introduction/assets/icons/icon-96x96.png": "22771e1145894ff726fb55804c2b29789f77afb1",
-    "/angular-pwa-introduction/assets/images/pokemon-logo.png": "c22a2efd81a7bc029c8fe4bdfb00e594876d364e",
-    "/angular-pwa-introduction/assets/screenshots/desktop.png": "ffb09608472e6af48393190a17d609f3e71866b9",
-    "/angular-pwa-introduction/assets/screenshots/mobile.png": "51344688d145992b21094489637776080a12c8a8",
-    "/angular-pwa-introduction/chunk-42NTJASF.js": "e1705aa4184f0e697d6e1fbf1faf2295c50da967",
-    "/angular-pwa-introduction/chunk-TGDIM3B6.js": "dbb1da6c3f213e82f7bddc6bcd4bbf0e090dacc1",
-    "/angular-pwa-introduction/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/angular-pwa-introduction/index.html": "a7a67e8436c2cd0b43d556f32cf63a358304d0bf",
-    "/angular-pwa-introduction/main-5U3RF2IR.js": "dd063c8fde836ecce0176a1b6f7cffebd61a9adf",
-    "/angular-pwa-introduction/manifest.webmanifest": "a6276785b854bda35a1007eae01e309596968014",
-    "/angular-pwa-introduction/polyfills-A7MJM4D4.js": "547053781d5952561abe68a51cc6c1a2b1b51c55",
-    "/angular-pwa-introduction/styles-AUG2VGXY.css": "4f2caf1d621a6a7e8b33f9fa34307c73209190a8"
+    "/pec5-front-end-avanzado/assets/icons/icon-128x128.png": "8b42cce4a2436a08c1edc85b37ea09158e803c3a",
+    "/pec5-front-end-avanzado/assets/icons/icon-144x144.png": "bcfa95c72fb2f61e00ee277d9b35d02497bbcca6",
+    "/pec5-front-end-avanzado/assets/icons/icon-152x152.png": "131b8b7f46856e3a09b0b68327f86472f4a646cb",
+    "/pec5-front-end-avanzado/assets/icons/icon-192x192.png": "4d896f7e11333a061c3f69cfbb1da651aa7a3d99",
+    "/pec5-front-end-avanzado/assets/icons/icon-384x384.png": "87ded333540496d34953269a180a62057779ac6d",
+    "/pec5-front-end-avanzado/assets/icons/icon-512x512.png": "4119f1800d984adf05008a02bfba163f3d280cb0",
+    "/pec5-front-end-avanzado/assets/icons/icon-72x72.png": "dfdf7d279ec6b6bedc32a80ce6da4eec6e6b9ef9",
+    "/pec5-front-end-avanzado/assets/icons/icon-96x96.png": "22771e1145894ff726fb55804c2b29789f77afb1",
+    "/pec5-front-end-avanzado/assets/images/pokemon-logo.png": "c22a2efd81a7bc029c8fe4bdfb00e594876d364e",
+    "/pec5-front-end-avanzado/assets/screenshots/desktop.png": "ffb09608472e6af48393190a17d609f3e71866b9",
+    "/pec5-front-end-avanzado/assets/screenshots/mobile.png": "51344688d145992b21094489637776080a12c8a8",
+    "/pec5-front-end-avanzado/chunk-42NTJASF.js": "e1705aa4184f0e697d6e1fbf1faf2295c50da967",
+    "/pec5-front-end-avanzado/chunk-TGDIM3B6.js": "dbb1da6c3f213e82f7bddc6bcd4bbf0e090dacc1",
+    "/pec5-front-end-avanzado/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/pec5-front-end-avanzado/index.html": "73c106c34cdcf32cf6bc3a06fa8987c0622a7775",
+    "/pec5-front-end-avanzado/main-HA7EYJP6.js": "47b8f04ac5436f93968f73bf5ee054717cedbc4b",
+    "/pec5-front-end-avanzado/manifest.webmanifest": "a6276785b854bda35a1007eae01e309596968014",
+    "/pec5-front-end-avanzado/polyfills-A7MJM4D4.js": "547053781d5952561abe68a51cc6c1a2b1b51c55",
+    "/pec5-front-end-avanzado/styles-XKYIJGDF.css": "878b55b8818609ced96fe4d5df452ce03fb088d4"
   },
   "navigationUrls": [
     {
