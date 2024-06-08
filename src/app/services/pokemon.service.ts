@@ -30,7 +30,7 @@ export class PokemonService {
           );
           return forkJoin(detailedRequests);
         }),
-        catchError(this.handleError<Pokemon[]>('getPokemons', []))
+        catchError(this.handleError<Pokemon[]>('getAllPokemons', []))
       );
   }
 
