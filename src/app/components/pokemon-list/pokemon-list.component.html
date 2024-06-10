@@ -1,6 +1,9 @@
 <div class="container">
     <div class="text-center my-3">
-        <img src="/assets/images/pokemon-logo.webp" alt="Pokémon" width="100px" height="100px" class="img-fluid w-25 w-md-25 w-lg-50" loading="lazy">
+        <img src="/assets/images/pokemon-logo-medium.webp"
+            srcset="/assets/images/pokemon-logo-small.webp 480w, /assets/images/pokemon-logo-medium.webp 640w"
+            sizes="(max-width: 600px) 480px, 640px" alt="Pokémon" width="100px" height="100px"
+            class="img-fluid w-25 w-md-25 w-lg-50" loading="lazy">
     </div>
 
     <div class="row text-center my-3">
@@ -36,10 +39,10 @@
         <ng-container *ngIf="viewSelected === 'card'">
             <app-card [pokemons]="pokemons"></app-card>
         </ng-container>
-    
+
         <ng-container *ngIf="viewSelected === 'grid'">
             <app-grid [pokemons]="pokemons"></app-grid>
         </ng-container>
     </ng-container>
-   
+
 </div>
